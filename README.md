@@ -3,7 +3,7 @@
 ปล. ทำขึ้นเพื่อศึกษา
 
 NuGet Install : 
-• DotnetSeleniumExtras.WaitHelpers
-• Selenium.Support
-• Selenium.WebDriver
+• DotnetSeleniumExtras.WaitHelpers |
+• Selenium.Support | 
+• Selenium.WebDriver  
 
