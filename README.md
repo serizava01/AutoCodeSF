@@ -2,4 +2,8 @@
 ทำงานโดยผ่านระบบ selenium ด้วยภาษา C# 
 ปล. ทำขึ้นเพื่อศึกษา
 
- 
+NuGet Install : 
+• DotnetSeleniumExtras.WaitHelpers
+• Selenium.Support
+• Selenium.WebDriver
+
