@@ -183,12 +183,12 @@ namespace AutoCodeSF
                 IWebElement timeElement = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xpath)));
                 LogMessage($"โหลดหน้า {timeLabel} ");
                 timeElement.Click();
-                IWebElement TimeCheck = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[1]/p[2]")));
-                IWebElement TimeMy = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[2]/p[2]")));
-                IWebElement txt_TimeCheck = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[1]/p[1]")));
-                IWebElement txt_TimeMy = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[2]/p[1]")));
-                LogMessage($"{TimeCheck.Text} {txt_TimeCheck.Text}");
-                LogMessage($"{TimeMy.Text} {txt_TimeMy.Text}");
+                IWebElement TimeQuestCheck = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[1]/p[2]")));
+                IWebElement TimeMeCheck = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[2]/p[2]")));
+                IWebElement txt_TimeQuest = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[1]/p[1]")));
+                IWebElement txt_TimeMe = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[2]/p[1]")));
+                LogMessage($"{TimeQuestCheck.Text} {txt_TimeQuest.Text}");
+                LogMessage($"{TimeMeCheck.Text} {txt_TimeMe.Text}");
 
                 IWebElement Status = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div/div[5]/a")));
                 HandleStatusItem(driver, Status, timeLabel);
@@ -251,17 +251,18 @@ namespace AutoCodeSF
                 {
                     LogMessage2($"{timeLabel}");
                     Status.Click();
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
-                        IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
+                        IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R1.Click();
                     }
-                    if (RB_ExpR2.Checked)
+                    else if (RB_ExpR2.Checked)
                     {
-                        IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
+                        IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
-                    LogMessage("รับExp Rank 2");
+                   Thread.Sleep(100);
                     IWebElement ButtonCmp = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[2]/a[1]")));
                     ButtonCmp.Click();
                     IWebElement Itemlist = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[1]/div/h1/div")));
@@ -269,7 +270,8 @@ namespace AutoCodeSF
                     LogMessage(ExpList);
                     IWebElement End = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[1]/div/div/a")));
                     End.Click();
-
+                    driver.Navigate().GoToUrl("http://member.sf.in.th/PIMS/Event_PlayGame_Accumulate.aspx");
+                    LogMessage("กลับหน้าเช็คEvent");
 
 
                 }
