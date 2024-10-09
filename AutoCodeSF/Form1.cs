@@ -262,7 +262,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
-                   Thread.Sleep(100);
+                    Thread.Sleep(100);
                     IWebElement ButtonCmp = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[2]/a[1]")));
                     ButtonCmp.Click();
                     IWebElement Itemlist = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[1]/div/h1/div")));
@@ -366,7 +366,8 @@ namespace AutoCodeSF
                     IWebElement dones = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div[2]/div[3]/a")));
                     dones.Click();
                     LogMessage("โหลดข้อมูลของรางวัล");
-                    if(RB_ExpR1.Checked)
+                    Thread.Sleep(100);
+                    if (RB_ExpR1.Checked)
                     {
                         IWebElement R1Exp = wait.Until(CustomExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         R1Exp.Click();
@@ -376,6 +377,7 @@ namespace AutoCodeSF
                         IWebElement R2Exp = wait.Until(CustomExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
                         R2Exp.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement DoneSingle = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[2]/a[1]")));
                     DoneSingle.Click();
                     Loong();
@@ -437,6 +439,7 @@ namespace AutoCodeSF
                     IWebElement donet = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[4]/div[2]/div[3]/a")));
                     LogMessage("โหลดข้อมูลของรางวัล");
                     donet.Click();
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement R1Exp = wait.Until(CustomExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
@@ -447,6 +450,7 @@ namespace AutoCodeSF
                         IWebElement R2Exp = wait.Until(CustomExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
                         R2Exp.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement DoneTeam = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[5]/div/div/div[2]/a[1]")));
                     DoneTeam.Click();
                     Loong();
@@ -738,7 +742,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
-
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -749,7 +753,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
-
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -761,6 +765,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -771,7 +776,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
-                    
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -782,6 +787,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -792,6 +798,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -802,6 +809,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -812,6 +820,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -822,6 +831,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -832,6 +842,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -842,6 +853,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -852,6 +864,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -862,6 +875,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -872,6 +886,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -882,6 +897,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -892,6 +908,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -902,6 +919,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -912,6 +930,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -922,6 +941,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -932,6 +952,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
@@ -942,6 +963,7 @@ namespace AutoCodeSF
                     IWebElement sendkeycode = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div/div/div[3]/div/div[1]/div[2]/a")));
                     sendkeycode.Click();
                     LogMessage("ส่งคีย์ไอเทมแล้ว");
+                    Thread.Sleep(100);
                     if (RB_ExpR1.Checked)
                     {
                         IWebElement Exp_R1 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[2]/td[1]/input[1]")));
@@ -952,6 +974,7 @@ namespace AutoCodeSF
                         IWebElement Exp_R2 = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[1]/table/tbody/tr[3]/td[1]/input[1]")));
                         Exp_R2.Click();
                     }
+                    Thread.Sleep(100);
                     IWebElement GetItem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/form/div[3]/div[3]/div[2]/div/div[3]/div/div/div[2]/a[1]")));
                     GetItem.Click();
                     LogMessage("ยืนยันการรับไอเทม");
